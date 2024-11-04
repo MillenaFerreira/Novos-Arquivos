@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 50px;
+}
+
+.tableContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.venda{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: left;
+    min-width: 100px;
+}
+
+tr{
+    border-bottom: 1px solid #ddd;
+}
+
+.product{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 40vw;
+}
+
+.product svg {
+    width: 30px;
+    height: 30px;
+}
+
+.productImage {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.card{
+    display: flex;
+    justify-content: end;
+}
+
+.cartTotal {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 4px;
+}
+
+.cartSummary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cartSummary p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkoutButton {
+    width: 100%;
+    background-color: var(--secondary-light-yellow);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.checkoutButton:hover {
+    background-color: var(--secondary-dark-yellow);
+}
+
+.quantity {
+    width: 50px;
+}
+
+.quantityInput {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+}
+
+.quantityContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.quantityButtons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.quantityButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.subtotal{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+@media (max-width: 600px) {
+    .cartTotal{
+        width: 100%;
+    }
+}

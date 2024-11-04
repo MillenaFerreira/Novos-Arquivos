@@ -1,0 +1,65 @@
+.pixDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.header a {
+    font-size: 14px;
+    color: var(--secondary-light-yellow);
+    cursor: pointer;
+}
+
+.qrCode img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.codigo{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.copy {
+    background-color: #4285F4;
+    width: 75%;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.copy:hover {
+    background-color: #357AE8;
+}

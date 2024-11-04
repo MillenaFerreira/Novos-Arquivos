@@ -1,0 +1,181 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: black;
+    height: 15vh;
+}
+
+.navigate {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    font-size: clamp(0.75rem, 0.5625rem + 0.75vw, 1.125rem);
+    color: #fff;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ticketsButton {
+    font-size: 1.125rem;
+    background-color: var(--secondary-light-yellow);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.ticketsButton:before,
+.ticketsButton:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--secondary-light-yellow);
+    transition: all 0.3s ease;
+}
+
+.ticketsButton:before {
+    height: 0%;
+    width: 2px;
+}
+
+.ticketsButton:after {
+    width: 0%;
+    height: 2px;
+}
+
+.ticketsButton:hover {
+    background: transparent;
+    box-shadow: none;
+    color: var(--secondary-light-yellow);
+}
+
+.ticketsButton:hover:before {
+    height: 100%;
+}
+
+.ticketsButton:hover:after {
+    width: 100%;
+}
+
+.ticketsButton span:hover {
+    color: var(--secondary-light-yellow);
+}
+
+.ticketsButton span:before,
+.ticketsButton span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--secondary-light-yellow);
+    transition: all 0.3s ease;
+}
+
+.ticketsButton span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.ticketsButton span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.ticketsButton span:hover:before {
+    height: 100%;
+}
+
+.ticketsButton span:hover:after {
+    width: 100%;
+}
+
+.nav a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid transparent;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    border-bottom: 2px solid var(--secondary-light-yellow);
+}
+
+.menuButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+.closeButton {
+    display: none;
+}
+
+@media (max-width: 999px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: black;
+        z-index: 100;
+        padding: 70px 10px 10px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    .nav li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .closeButton {
+        display: flex;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 11;
+    }
+}

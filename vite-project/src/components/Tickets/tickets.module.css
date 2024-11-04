@@ -1,0 +1,179 @@
+.title{
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.pricingContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px;
+    gap: 75px;
+    place-items: center;
+}
+
+.pricingCard {
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+.pricingCard::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid var(--secondary-light-yellow);
+    border-radius: 8px;
+    pointer-events: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.pricingCard:hover::before {
+    box-shadow: 0 0 10px var(--secondary-dark-yellow);
+}
+
+.pricingCard:hover {
+    -webkit-box-shadow: -6px 6px 6px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -6px 6px 6px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: -6px 6px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.pricingCard h1 {
+    font-size: 36px;
+}
+
+.pricingCard h3 {
+    font-size: 48px;
+    border-bottom: 2px solid var(--secondary-light-yellow);
+}
+
+.currency {
+    font-size: 36px;
+    padding-right: 10px;
+}
+
+.cents {
+    font-size: 36px;
+}
+
+.price {
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.pricingCard p {
+    font-size: 24px;
+}
+
+.priceBox {
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+.button {
+    background-color: var(--secondary-light-yellow);
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--secondary-dark-yellow);
+}
+
+.ticketsButton {
+    font-size: 1.5rem;
+    background-color: var(--secondary-light-yellow);
+    color: #000;
+    font-weight: bolder;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.ticketsButton:before,
+.ticketsButton:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--secondary-light-yellow);
+    transition: all 0.3s ease;
+}
+
+.ticketsButton:before {
+    height: 0%;
+    width: 2px;
+}
+
+.ticketsButton:after {
+    width: 0%;
+    height: 2px;
+}
+
+.ticketsButton:hover {
+    background: transparent;
+    box-shadow: none;
+    color: var(--secondary-light-yellow);
+}
+
+.ticketsButton:hover:before {
+    height: 100%;
+}
+
+.ticketsButton:hover:after {
+    width: 100%;
+}
+
+.ticketsButton span:hover {
+    color: var(--secondary-light-yellow);
+}
+
+.ticketsButton span:before,
+.ticketsButton span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--secondary-light-yellow);
+    transition: all 0.3s ease;
+}
+
+.ticketsButton span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.ticketsButton span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.ticketsButton span:hover:before {
+    height: 100%;
+}
+
+.ticketsButton span:hover:after {
+    width: 100%;
+}

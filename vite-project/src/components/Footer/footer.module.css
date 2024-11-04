@@ -1,0 +1,112 @@
+.footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.footerInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerDados {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.footerDados p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 85%;
+    text-align: start;
+}
+
+.iconFooter {
+    margin-right: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footerLogo .logo {
+    max-width: 150px;
+}
+
+.footerSocial p {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.socialIcons a {
+    padding-right: 20px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+    color: var(--secondary-light-yellow);
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 999px) {
+    .socialIcons {
+        display: flex;
+        gap: 0px;
+    }
+}
+
+@media (max-width: 650px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .footerInfo {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footerDados p {
+        display: flex;
+        gap: 20px;
+        text-align: start;
+        width: 100%;
+    }
+
+    .footerSocial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socialIcons {
+        display: flex;
+        gap: 40px;
+    }
+
+    .socialIcons a {
+        padding: 0;
+    }
+
+    .iconFooter {
+        margin: 0;
+    }
+}

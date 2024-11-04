@@ -1,0 +1,17 @@
+export const products = [
+  {
+    id: "1",
+    name: "Acesso Antecipado",
+    price: 79.00,
+  },
+  {
+    id: "2",
+    name: "Criança de até 10 anos",
+    price: 39.50,
+  },
+  {
+    id: "3",
+    name: "Criança de até 4 anos",
+    price: 0.00,
+  }
+];

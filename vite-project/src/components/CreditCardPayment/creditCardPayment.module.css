@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header a {
+    font-size: 14px;
+    color: var(--secondary-light-yellow);
+    cursor: pointer;
+}
+
+.cardDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.creditCardDetails div {
+    margin-bottom: 15px;
+}
+
+.creditCardDetails p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.creditCardDetails label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.creditCardDetails input[type="text"],
+.creditCardDetails select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.dateSelect {
+    display: flex;
+    gap: 10px;
+}
+
+.dateSelect select {
+    width: 48%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    background-color: #f44336;
+    width: 45%;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.save {
+    background-color: #1e90ff;
+    width: 45%;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
